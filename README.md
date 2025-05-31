@@ -25,11 +25,18 @@ An ETL project that extracts country data from the public API `https://restcount
 
 ## How to Run
 
-### 1. Create a `.env` file
+```bash
+1. Clone this repo
 
-```env
+git clone https://github.com/Jamorno/country-ETL-Docker.git
+
+2. Create a `.env` file
+
 DB_HOST=db
 DB_PORT=5432
 DB_NAME=country_etl
 DB_USER=postgres
 DB_PASSWORD=postgres
+
+3. Build and run with Docker Compose
+docker compose up --build
